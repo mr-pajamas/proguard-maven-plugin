@@ -18,7 +18,7 @@
  * @author vlads
  * @version $Id$
  */
-package com.github.wvengen.maven.proguard;
+package com.ivargo.maven.proguard;
 
 import java.io.File;
 import java.io.IOException;
@@ -799,6 +799,8 @@ public class ProGuardMojo extends AbstractMojo {
 		java.setFailonerror(true);
 
 		java.setFork(true);
+
+		java.setCloneVm(true);
 
 		// get the maxMemory setting
 		if (mojo.maxMemory != null) {
